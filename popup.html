@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<title>GitHub Repo Insights Pro</title>
+<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="pop">
+    <header class="pop-header">
+      <div class="pop-ring">
+        <div class="pop-ring-inner"></div>
+      </div>
+      <div class="pop-header-text">
+        <span class="pop-eyebrow">GITHUB INSIGHTS</span>
+        <h1 class="pop-title">Repo Insights Pro</h1>
+      </div>
+    </header>
+
+    <div class="pop-row">
+      <div class="pop-row-text">
+        <span class="pop-row-title">تفعيل البطاقة</span>
+        <span class="pop-row-sub">إظهار بطاقة التحليلات تلقائيًا في صفحات المستودعات</span>
+      </div>
+      <label class="pop-switch">
+        <input type="checkbox" id="enabledToggle" />
+        <span class="pop-switch-track"><span class="pop-switch-thumb"></span></span>
+      </label>
+    </div>
+
+    <div class="pop-row pop-row-col">
+      <div class="pop-row-text">
+        <span class="pop-row-title">GitHub Token (اختياري)</span>
+        <span class="pop-row-sub">أدخل Personal Access Token لتخطي حد الطلبات.</span>
+      </div>
+      <div class="pop-input-group">
+        <input type="password" id="ghTokenInput" class="pop-input" placeholder="ghp_..." />
+        <button type="button" id="ghTokenSave" class="pop-btn">حفظ</button>
+      </div>
+      <div id="ghTokenStatus" class="pop-status"></div>
+    </div>
+
+    <p class="pop-note">
+      البطاقة تعرض نقاط صحة المستودع، النجوم، الفروع، الرخصة، وأبرز المساهمين — بالاعتماد على واجهة GitHub العامة (بدون تسجيل دخول).
+    </p>
+
+    <footer class="pop-footer">
+      <span>الإصدار 1.0.0</span>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
